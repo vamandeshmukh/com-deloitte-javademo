@@ -17,6 +17,15 @@ public class StreamDemo {
 
 		System.out.println(empList);
 
+		System.out.println("Print all employees using for each loop");
+		for (Employee e : empList) {
+			System.out.println(e.toString());
+		}
+
+		System.out.println("Print employees with salary > 80000 using for each loop");
+		for (Employee e : empList) {
+			System.out.println(e.toString());
+		}
 	}
 
 }
