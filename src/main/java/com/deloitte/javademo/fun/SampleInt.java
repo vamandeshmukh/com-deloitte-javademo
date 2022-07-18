@@ -49,9 +49,12 @@ package com.deloitte.javademo.fun;
 @FunctionalInterface
 interface FunInt {
 
-	public abstract void funMethod();
+//	public abstract void funMethod();
 
-//	public abstract void funMethod2();
+//	public abstract void funMethod(int num);
+
+public abstract int funMethod(int num);
+	// public abstract void funMethod2();
 }
 
 // abc 
