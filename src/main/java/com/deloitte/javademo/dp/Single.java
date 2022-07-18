@@ -2,7 +2,7 @@ package com.deloitte.javademo.dp;
 
 public class Single {
 
-	private static Single obj = new Single();
+	private static Single obj;
 
 	// work here
 
@@ -12,8 +12,9 @@ public class Single {
 
 	public static Single getInstance() {
 
+		if (obj == null) {
+			obj = new Single();
+		}
 		return obj;
-
 	}
-
 }

@@ -4,6 +4,7 @@ public class DpDemo {
 
 	public static void main(String[] args) {
 
+		System.out.println("Start");
 		Single obj = Single.getInstance();
 		System.out.println(obj.hashCode());
 		Single obj2 = Single.getInstance();
@@ -14,6 +15,7 @@ public class DpDemo {
 		System.out.println(obj.equals(obj2));
 		System.out.println(obj.equals(obj3));
 		System.out.println(obj2.equals(obj3));
+		System.out.println("End");
 
 	}
 
