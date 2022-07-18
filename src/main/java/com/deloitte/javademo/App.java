@@ -16,9 +16,10 @@ public class App {
 		System.out.println("Start");
 		
 		Student mohan = new Student();
-		mohan.marks = 99; // 92 
-		System.out.println(mohan.marks);
-		
+//		mohan.marks = 99; // 92 
+//		System.out.println(mohan.marks);
+		mohan.setMarks(99);
+		System.out.println(mohan.getMarks());
 	
 	}
 }
