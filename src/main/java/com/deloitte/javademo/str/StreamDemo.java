@@ -2,6 +2,7 @@ package com.deloitte.javademo.str;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class StreamDemo {
 
@@ -24,8 +25,18 @@ public class StreamDemo {
 
 		System.out.println("Print employees with salary > 80000 using for each loop");
 		for (Employee e : empList) {
-			System.out.println(e.toString());
+			if (e.getSalary() > 80000) {
+				System.out.println(e.toString());
+			}
 		}
+		
+		Stream<Employee> empStream = empList.stream();
+		
+		System.out.println("Print employees with salary > 80000 using stream API filter method");
+		empStream.filter(e -> e.getSalary() > 80000).forEach(e -> System.out.println(e.toString()));
+		
+		
+		
 	}
 
 }
