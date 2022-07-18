@@ -10,9 +10,11 @@ public class TryDemo {
 
 		System.out.println("Please enter your name:");
 
+		String name;
+
 		try (Scanner sc = new Scanner(System.in);) {
 
-			String name = sc.next();
+			name = sc.next();
 			System.out.println("Hi " + name + "!");
 		}
 
