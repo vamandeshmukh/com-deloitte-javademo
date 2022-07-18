@@ -24,6 +24,15 @@ public class App {
 		Student student1 = new Student(101, "Mohan", 99);
 
 		System.out.println(student1.toString());
+		
+		
+		int[] arr = new int[5];
+
+		
+		
 
 	}
 }
+
+
+
