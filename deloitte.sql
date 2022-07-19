@@ -12,3 +12,4 @@ INSERT INTO student (roll_no, student_name, marks) VALUES (101, 'Sonu', 98);
 INSERT INTO student (roll_no, student_name, marks) VALUES (102, 'Monu', 96);
 INSERT INTO student (roll_no, student_name, marks) VALUES (103, 'Tonu', 99);
 
+-- comment 
